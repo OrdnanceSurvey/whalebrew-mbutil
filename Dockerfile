@@ -9,4 +9,4 @@ RUN apk add --no-cache git \
  && rm -rf mbutil \
  && apk del git
 
-ENTRYPOINT mb-util
+ENTRYPOINT /usr/local/bin/mb-util
