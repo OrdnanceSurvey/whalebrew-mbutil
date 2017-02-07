@@ -6,7 +6,6 @@ RUN apk add --no-cache git \
  && cd mbutil \
  && python setup.py install \
  && cd /root \
- && rm -rf mbutil \
  && apk del git
 
 ENTRYPOINT ["/usr/local/bin/mb-util"]
